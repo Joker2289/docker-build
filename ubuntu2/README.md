@@ -5,8 +5,8 @@ Ubuntu, It support base user creation and password setting.
 
 Copy the sources to your docker host and build the container, and to run.
 ```
-	docker build   --rm -t pjk2289/ubuntu:test .
-	docker run -it --rm --name u1  pjk2289/ubuntu:test
+docker build   --rm -t pjk2289/ubuntu:1 .
+docker run -it --rm --name u1  pjk2289/ubuntu:1
 ```
 Get the port that the container is listening on:
 
@@ -18,10 +18,10 @@ CONTAINER ID        IMAGE                COMMAND             CREATED            
 
 To test,
 ```
-	tree
+tree
 ```
 To Rollback
 ```
-    docker rm u1 -f 
-    docker rmi pjk2289/ubuntu:test
+docker rm u1 -f 
+docker rmi pjk2289/ubuntu:1
 ```
